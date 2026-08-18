@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerConnect Job Portal</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f8ff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:white;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:600;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+color:white;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:95vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:80px;
+}
+
+.hero p{
+font-size:24px;
+margin:20px 0;
+}
+
+/* SEARCH BAR */
+
+.search-section{
+padding:50px 8%;
+margin-top:-70px;
+}
+
+.search-box{
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.search-box input,
+.search-box select{
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+}
+
+/* STATS */
+
+.stats{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat h2{
+font-size:40px;
+color:#2563eb;
+}
+
+/* JOBS */
+
+.jobs{
+padding:80px 8%;
+}
+
+.jobs h2{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#2563eb;
+}
+
+.job-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.job{
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.job h3{
+color:#2563eb;
+}
+
+.salary{
+font-size:22px;
+font-weight:bold;
+color:#10b981;
+margin:10px 0;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px 8%;
+background:#eef4ff;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.feature i{
+font-size:60px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+/* DIRECTOR DASHBOARD */
+
+.dashboard{
+padding:80px 8%;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* RESUME */
+
+.resume{
+padding:80px 8%;
+background:#eef4ff;
+text-align:center;
+}
+
+.resume-box{
+background:white;
+padding:40px;
+border-radius:25px;
+max-width:700px;
+margin:auto;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.resume input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:12px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">💼 CareerConnect</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Jobs</a>
+<a href="#">Companies</a>
+<a href="#">Directors</a>
+<a href="#">Login</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+<h1>Find Your Dream Job</h1>
+<p>Connect With Top Companies Across India</p>
+<button class="btn">Explore Jobs</button>
+</div>
+
+</section>
+
+<section class="search-section">
+
+<div class="search-box">
+
+<input type="text" placeholder="Job Title">
+
+<input type="text" placeholder="Location">
+
+<select>
+<option>Select Category</option>
+<option>Software</option>
+<option>AI/ML</option>
+<option>Data Science</option>
+<option>Marketing</option>
+</select>
+
+<button class="btn">Search Jobs</button>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2>25K+</h2>
+<p>Jobs Posted</p>
+</div>
+
+<div class="stat">
+<h2>10K+</h2>
+<p>Companies</p>
+</div>
+
+<div class="stat">
+<h2>1M+</h2>
+<p>Applicants</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>Placement Rate</p>
+</div>
+
+</section>
+
+<section class="jobs">
+
+<h2>🔥 Featured Vacancies</h2>
+
+<div class="job-grid">
+
+<div class="job">
+<h3>AI Engineer</h3>
+<p>OpenAI Technologies</p>
+<p>📍 Chennai</p>
+<p class="salary">₹12 LPA</p>
+<button class="btn">Apply Now</button>
+</div>
+
+<div class="job">
+<h3>Full Stack Developer</h3>
+<p>TechNova Pvt Ltd</p>
+<p>📍 Bangalore</p>
+<p class="salary">₹10 LPA</p>
+<button class="btn">Apply Now</button>
+</div>
+
+<div class="job">
+<h3>Data Analyst</h3>
+<p>Future Analytics</p>
+<p>📍 Hyderabad</p>
+<p class="salary">₹8 LPA</p>
+<button class="btn">Apply Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2 align="center" style="margin-bottom:40px;">
+🚀 Portal Features
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<i class="fas fa-search"></i>
+<h3>Advanced Search</h3>
+</div>
+
+<div class="feature">
+<i class="fas fa-bell"></i>
+<h3>Daily Notifications</h3>
+</div>
+
+<div class="feature">
+<i class="fas fa-heart"></i>
+<h3>Save Jobs</h3>
+</div>
+
+<div class="feature">
+<i class="fas fa-file-alt"></i>
+<h3>Resume Upload</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="resume">
+
+<div class="resume-box">
+
+<h2>📄 Upload Resume</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="file">
+
+<button class="btn">Submit Resume</button>
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<h2 align="center" style="margin-bottom:40px;">
+👨‍💼 Director Dashboard
+</h2>
+
+<div class="dashboard-grid">
+
+<div class="card">
+<h3>Post Vacancy</h3>
+<p>Create New Job Openings</p>
+</div>
+
+<div class="card">
+<h3>View Applicants</h3>
+<p>Manage Applications</p>
+</div>
+
+<div class="card">
+<h3>Shortlist Candidates</h3>
+<p>Select Suitable Users</p>
+</div>
+
+<div class="card">
+<h3>Manage Vacancies</h3>
+<p>Edit & Delete Jobs</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>💼 CareerConnect</h2>
+
+<p>Search • Apply • Get Hired</p>
+
+<br>
+
+<p>© 2026 CareerConnect Job Portal</p>
+
+</footer>
+
+</body>
+</html>

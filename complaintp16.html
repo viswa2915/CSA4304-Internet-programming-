@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComplainEase</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7ff;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#4f46e5,#7c3aed,#ec4899);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:75px;
+}
+
+.hero p{
+font-size:24px;
+margin:20px 0;
+}
+
+.btn{
+background:#ff9800;
+color:white;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px 8%;
+}
+
+.features h2{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#4f46e5;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card i{
+font-size:60px;
+color:#7c3aed;
+margin-bottom:15px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+padding:80px 8%;
+background:#eef2ff;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 8%;
+text-align:center;
+}
+
+.contact-box{
+background:white;
+padding:40px;
+max-width:700px;
+margin:auto;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🛡️ ComplainEase</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Complaints</a>
+<a href="#">Officer</a>
+<a href="#">Admin</a>
+<a href="#">Login</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+<h1>Complaint Management System</h1>
+<p>Fast, Transparent & Efficient Grievance Resolution</p>
+<button class="btn">Register Complaint</button>
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Our Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-file-signature"></i>
+<h3>Register Complaint</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Google Map Location</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-search"></i>
+<h3>Track Complaint</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-comments"></i>
+<h3>Feedback System</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-user-shield"></i>
+<h3>Officer Dashboard</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-chart-line"></i>
+<h3>Admin Analytics</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<h2 style="text-align:center;margin-bottom:40px;">
+📊 System Modules
+</h2>
+
+<div class="dashboard-grid">
+
+<div class="box">
+<h3>👤 User Module</h3>
+<p>Register, Login, Complaint Tracking</p>
+</div>
+
+<div class="box">
+<h3>👮 Officer Module</h3>
+<p>Complaint Handling & Updates</p>
+</div>
+
+<div class="box">
+<h3>👨‍💼 Admin Module</h3>
+<p>Manage Users & Officers</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="contact-box">
+
+<h2>☎ Admin Contact Details</h2>
+
+<p>Email: admin@complainease.com</p>
+<p>Phone: +91 9876543210</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🛡️ ComplainEase</h2>
+
+<p>Making Complaint Resolution Easy & Transparent</p>
+
+<br>
+
+<p>© 2026 ComplainEase. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
